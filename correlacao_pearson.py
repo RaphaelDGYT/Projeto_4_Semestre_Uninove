@@ -2,7 +2,7 @@ print("*************************************************************************
 print("****BEM VINDO AO NOSSO CÓDIGO, VAMOS REALIZAR A CORRELAÇÃO DE PEARSON PARA VOCÊ!****")
 print("************************************************************************************")
 
-# Interação pra pedir o valor de "M".
+# Interação com o usuário pra pedir o valor de "M".
 m = int(input("Qual o valor de m? "))
 
 # Variáveis da fórmula em forma de lista para receber todos os valores.
@@ -56,6 +56,7 @@ soma_x_y = sum(x_y)
 soma_x_2 = sum(x_2)
 soma_y_2 = sum(y_2)
 
+# Fórmula da Correlação de Pearson.
 correlacao = (m * soma_x_y - soma_x * soma_y) / ((m * soma_x_2 - soma_x * soma_x) ** 0.5 * (m * soma_y_2 - soma_y * soma_y) ** 0.5)
 
 print("")
